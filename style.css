@@ -1,0 +1,55 @@
+:root {
+  color-scheme: dark;
+  font-family: system-ui, sans-serif;
+  background: #24170c;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  padding: 35px 16px max(20px, env(safe-area-inset-bottom));
+  background: linear-gradient(transparent, rgba(35, 18, 5, .65));
+  color: #fff9e8;
+  text-align: center;
+}
+
+#motion-status {
+  margin: 0;
+  font-size: 13px;
+  text-shadow: 0 1px 3px #24170c;
+}
+
+.buttons { display: flex; gap: 10px; }
+
+button {
+  min-height: 44px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 249, 232, .8);
+  border-radius: 4px;
+  background: rgba(36, 23, 12, .75);
+  color: #fff9e8;
+  font: 700 13px system-ui, sans-serif;
+  cursor: pointer;
+}
+
+button:focus-visible { outline: 3px solid white; outline-offset: 3px; }
+button:disabled { opacity: .8; cursor: default; }

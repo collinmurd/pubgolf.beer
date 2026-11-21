@@ -1,0 +1,5 @@
+FROM nginxinc/nginx-unprivileged:stable-alpine
+
+COPY index.html style.css script.js /usr/share/nginx/html/
+
+EXPOSE 8080

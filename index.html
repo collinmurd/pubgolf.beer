@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e59a20">
+  <meta name="description" content="A virtual beer from Pub Golf.">
+  <title>Pub Golf</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main>
+    <canvas id="pint" role="img" aria-label="Beer sloshing in response to your phone's tilt"></canvas>
+    <div class="controls">
+      <p id="motion-status" aria-live="polite">Enable tilt, then tip your phone back to drink.</p>
+      <div class="buttons">
+        <button id="enable-motion" type="button">Enable tilt</button>
+        <button id="refill" type="button">Refill</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
